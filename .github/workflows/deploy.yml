@@ -7,7 +7,7 @@
       key: ${{ secrets.SERVER_SSH_KEY }}
       script: neofetch && df -H / && free -m
 
-	# тут мы ставим на github action ssh ключ, чтобы можно было пользоваться всякими командами а-ля rsync, scp и прочее
+ # тут мы ставим на github action ssh ключ, чтобы можно было пользоваться всякими командами а-ля rsync, scp и прочее
 - name: agent - install ssh key
   uses: shimataro/ssh-key-action@v2
   with:
